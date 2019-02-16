@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin </title>
+</head>
+<body>
+    <script>
+        window.onload=function(){
+
+            var  userType=sessionStorage.getItem('userType');
+            if(!userType || userType!="teacher"){/* to check the usertype with value and this value is teacher  so if not will go to the login*/
+                window.location.href='login.html';
+            }
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button type="submit" onclick="order()"></button>
+    <p id ="demo"></p>
+   <script>
+       
+    function order(){
+        var b=["banna","apple","mango"];
+        window.alert(b.push("kiwi"))
+      //  window.alert(b.reverse());
+        window.alert(b.shift())
+        window.alert(b.unshift("lemon"))
+
+        var x
+        /*window.alert(b.indexOf("apple"));// return number of apple is 1*/
+        for(var i=0;i<b.length;i++){
+           // window.alert(b[i]);
+           x +="<li>"+ b[i]+"</li>";
+           document.getElementById("demo").innerHTML =x; 
+
+                  }
+    }
+    </script> 
+</body>
+</html>
